@@ -3,7 +3,13 @@ import React from 'react'
 const Contact = () => (
   <section id="contact">
     <div className="container">
-      <form netlify method="POST" className="contact-form" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        className="contact-form"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <h2>Get in touch</h2>
         <div className="line" />
         <p>
