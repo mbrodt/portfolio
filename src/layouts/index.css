@@ -1,0 +1,376 @@
+:root {
+  --blue: #3790ed;
+  --orange: #ffb11a;
+  --darkblue: #0066d1;
+  --black: #292929;
+  --success: #69c46d;
+  --rounded: 5px;
+}
+
+/* #################### MISC #################### */
+
+html {
+  font-size: 16px;
+}
+
+#main-container {
+  background-color: blue;
+}
+
+body {
+  color: white;
+  background-color: var(--blue);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+/* #################### HEADER #################### */
+
+header {
+  background-color: var(--blue);
+  margin-bottom: 6rem;
+}
+
+.profile-pic {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid var(--orange);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+header a {
+  color: white;
+  padding: 0.3rem 1rem;
+  transition: background-color 0.4s;
+}
+
+header a:not(#banner):hover {
+  color: #fff;
+  border-radius: var(--rounded);
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+#banner {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* #################### NAVIGATION #################### */
+
+#main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+}
+
+#hamburger {
+  display: none;
+}
+
+#mobile-navigation {
+  list-style: none;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.is-passive {
+  display: none;
+}
+
+/* #################### BUTTONS #################### */
+
+.btn {
+  width: 9rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: var(--rounded);
+  font-size: 1.2rem;
+  opacity: 1;
+  transition: transform 0.5s ease 0s;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  /* padding: .375rem .75rem; */
+  line-height: 1.5;
+}
+
+.primary-btn {
+  background-color: #f2f2f2;
+  color: var(--darkblue);
+}
+
+.secondary-btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.success-btn {
+  width: 100%;
+  background-color: var(--success);
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-3px);
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* #################### PROJECTS #################### */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+#projects a img {
+  transition: transform 0.5s ease-in 0s, opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+#projects a:hover img {
+  opacity: 0;
+  transform: translateX(60px);
+}
+
+#projects a p {
+  transition: font-size 0.6s ease 0s;
+}
+
+#projects a:hover p {
+  font-size: 1.1rem;
+}
+
+.project-card {
+  background-color: rgb(255, 255, 255);
+  color: rgb(133, 133, 133);
+  /* border: 5px solid goldenrod; */
+}
+
+.card-end {
+  height: 3rem;
+  background: linear-gradient(
+    97.46deg,
+    #c4c4c4 0.11%,
+    #5efce8 0.12%,
+    #736efe 100.76%
+  );
+}
+.project-img {
+  max-width: 100%;
+  padding: 20px 50px 0px;
+}
+.card-end p {
+  color: white;
+}
+.line {
+  width: 40px;
+  height: 4px;
+  background: var(--orange);
+  margin: 0 auto;
+  margin-top: 22px;
+  border-radius: 12px;
+  margin-bottom: 36px;
+}
+/* #################### ABOUT #################### */
+#about {
+  background-color: var(--darkblue);
+  display: flex;
+  flex-direction: column;
+}
+.about-me-text {
+  margin-top: 2rem;
+  font-size: 20px;
+}
+.tool {
+  width: 100%;
+  padding: 30px;
+}
+#social {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* #################### CONTACT #################### */
+.status {
+  background-color: var(--success);
+  font-weight: bold;
+  margin-left: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: var(--rounded);
+}
+.input-field {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: var(--rounded);
+  color: #fff;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 0 25px;
+}
+#message {
+  padding: 15px 25px;
+  height: auto;
+}
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.contact-form {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+/* #################### BLOG #################### */
+.blog-card {
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+.blog-card:hover {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+.blog-card-content h2 {
+  color: #252525;
+}
+.blog-card-image {
+  width: 100%;
+  padding: 0;
+}
+.blog-card-content {
+  margin: 0 30px;
+}
+.blog-post-date {
+  font-style: italic;
+  color: #8b8b8b;
+}
+.blog-post-subheading {
+  margin-top: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+}
+.blog-post-body {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #667685;
+  padding: 40px;
+  margin-top: 3rem;
+  font-size: 20px;
+  line-height: 1.8;
+  border-radius: 10px;
+  font-family: Georgia, Times, Times New Roman, serif;
+}
+.container-small,
+.container-large {
+  max-width: 100%;
+}
+/* #################### MEDIA QUERIES #################### */
+@media (max-width: 768px) {
+  .role-text {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .blog-post-body {
+    font-size: 18px;
+    padding: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-form {
+    width: 80%;
+  }
+  section {
+    margin: 3rem 0;
+  }
+  #hamburger {
+    display: block;
+  }
+  #main-navigation {
+    display: none;
+  }
+  .blog-post-body {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .container-small {
+    width: 600px;
+  }
+}
+@media (min-width: 576px) {
+  #mobile-navigation {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .container-small {
+    width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-small {
+    width: 600px;
+  }
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+}
+.center-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
