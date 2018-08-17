@@ -1,11 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Header from '../components/header'
+import Helmet from 'react-helmet'
 import './index.css'
 
 const Layout = ({ children, data }) => (
   <div>
-    {/* <Header /> */}
+    <Helmet
+      meta={[
+        {
+          name: 'description',
+          content: 'A portfolio site for Mads Brodt',
+        },
+      ]}
+      title="Mads Brodt"
+    >
+      {/* <meta charSet="utf-8" />
+      <meta name="Description" content="" />
+      <title>My Title</title> */}
+      <html lang="en" />
+    </Helmet>
+    <Header />
     {children()}
   </div>
 )
