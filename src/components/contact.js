@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => (
   <section id="contact">
     <div className="container">
-      <form method="POST" className="contact-form">
+      <form netlify method="POST" className="contact-form">
         <h2>Get in touch</h2>
         <div className="line" />
         <p>

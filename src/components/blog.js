@@ -21,16 +21,13 @@ const Blog = ({ blogData }) => {
 const Post = ({ post }) => {
   return (
     <Link to={post.fields.slug}>
-      <div className="blog-card ">
-        <Img
-          sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-          alt=""
-        />
+      <div className="blog-card">
         <div className="blog-card-content">
-          <h2 style={{ marginTop: '1.45rem' }}>{post.frontmatter.title}</h2>
+          <h2>{post.frontmatter.title}</h2>
           <p className="blog-post-date">Posted on {post.frontmatter.date}</p>
           <div>
-            <p style={{ paddingBottom: '20px' }}>{post.excerpt}</p>
+            <p>{post.excerpt}</p>
+            <span style={{ color: '#0066d1' }}>Read more...</span>
           </div>
         </div>
       </div>

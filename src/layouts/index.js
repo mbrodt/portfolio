@@ -5,7 +5,7 @@ import './index.css'
 
 const Layout = ({ children, data }) => (
   <div>
-    <Header />
+    {/* <Header /> */}
     {children()}
   </div>
 )
