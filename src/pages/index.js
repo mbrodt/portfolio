@@ -5,6 +5,12 @@ import Projects from '../components/projects'
 import Blog from '../components/blog'
 import Contact from '../components/contact'
 
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]')
+}
+
 const IndexPage = ({ data }) => {
   console.log(data)
   return (

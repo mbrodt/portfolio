@@ -64,6 +64,7 @@ a {
 
 header {
   background-color: var(--blue);
+  margin-top: 2rem;
   margin-bottom: 6rem;
 }
 
@@ -101,19 +102,19 @@ header a:not(#banner):hover {
   margin: 0;
 }
 
-#hamburger {
+/* #hamburger {
   display: none;
-}
-
+} */
+/* 
 #mobile-navigation {
   list-style: none;
   margin-left: auto;
   margin-right: 0;
-}
+} */
 
-.is-passive {
+/* .is-passive {
   display: none;
-}
+} */
 
 /* #################### BUTTONS #################### */
 
@@ -328,19 +329,35 @@ header a:not(#banner):hover {
     font-size: 18px;
     padding: 25px;
   }
+  .intro-text-container {
+    padding-left: 20px;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  header {
+    margin: 2rem 0;
+  }
 }
 @media (max-width: 576px) {
   .contact-form {
     width: 80%;
   }
-  section {
-    margin: 3rem 0;
+  .intro-text-container {
+    padding-left: 0;
   }
-  #hamburger {
+  /* #hamburger {
     display: block;
-  }
+  } */
   #main-navigation {
-    display: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #intro-container {
+    flex-direction: column;
+  }
+  .role-text {
+    margin-top: 0px;
   }
   .blog-post-body {
     font-size: 16px;
@@ -350,11 +367,6 @@ header a:not(#banner):hover {
 @media (max-width: 992px) {
   .container-small {
     width: 600px;
-  }
-}
-@media (min-width: 576px) {
-  #mobile-navigation {
-    display: none;
   }
 }
 @media (min-width: 992px) {

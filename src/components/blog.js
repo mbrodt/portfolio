@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 const Blog = ({ blogData }) => {
   console.log('hey', blogData)
   return (
-    <section className="container">
+    <section id="blog" className="container">
       <h2 style={{ textAlign: 'center' }}>Blog posts</h2>
       <div className="line" />
       {/* <h4>Amount of posts: {blogData.totalCount}</h4> */}

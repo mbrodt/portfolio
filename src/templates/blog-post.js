@@ -17,6 +17,7 @@ export default ({ data }) => {
 const BlogPostWrapper = styled.div`
   max-width: 600px;
   margin: 0 auto;
+  padding: 20px;
 `
 
 const PostData = styled.span`
