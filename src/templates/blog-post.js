@@ -18,6 +18,11 @@ const BlogPostWrapper = styled.div`
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  color: #252525;
+  font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman',
+    Times, serif;
 `
 
 const PostData = styled.span`
@@ -26,8 +31,8 @@ const PostData = styled.span`
 `
 
 const BodyText = styled.p`
-  font-size: 1.25rem;
-  line-height: 1.3;
+  font-size: 1.1rem;
+  line-height: 2rem;
 `
 
 export const query = graphql`

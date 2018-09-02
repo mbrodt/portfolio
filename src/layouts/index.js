@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Header from '../components/header'
 import Helmet from 'react-helmet'
 import './index.css'
+require('prismjs/themes/prism-tomorrow.css')
 
 const Layout = ({ children, data }) => (
   <div>
