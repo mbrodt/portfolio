@@ -39,13 +39,14 @@ h6 {
 
 h1 {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
 h2 {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 section {
@@ -54,6 +55,12 @@ section {
 
 a {
   text-decoration: none;
+}
+
+p a {
+  text-decoration: none;
+  color: #252525;
+  border-bottom: 1px solid #252525;
 }
 
 .orange {

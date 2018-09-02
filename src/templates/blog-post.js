@@ -23,6 +23,9 @@ const BlogPostWrapper = styled.div`
   color: #252525;
   font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman',
     Times, serif;
+  @media (max-width: 620px) {
+    margin: 10px;
+  }
 `
 
 const PostData = styled.span`

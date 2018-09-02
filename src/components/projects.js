@@ -35,7 +35,7 @@ const Project = ({ project }) => {
         <div>
           <ProjectTitle>{project.title}</ProjectTitle>
           <ProjectDescription>{project.description}</ProjectDescription>
-          <CardFooter href={`${project.link}`}>
+          <CardFooter target="_blank" href={`${project.link}`}>
             {' '}
             <FooterText>{project.footerText}</FooterText>
             <img style={{ marginBottom: 0 }} src={Arrow} alt="" />{' '}
