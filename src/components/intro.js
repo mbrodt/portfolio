@@ -18,7 +18,7 @@ const Intro = () => (
         <p className="">
           Hey! My name is Mads Brodt, and I’m a front-end developer living in
           Denmark. Have a look around my website, and don’t hesitate to get in
-          contact if you have any question
+          contact if you have any questions
           <b className="orange">.</b>
         </p>
       </div>
