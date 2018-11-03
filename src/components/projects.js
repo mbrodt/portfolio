@@ -31,20 +31,24 @@ const Project = ({ project }) => {
         src={require(`../assets/${project.img}`)}
         alt="Should be image"
       />
-      <div className="">
-        <div>
-          <ProjectTitle>{project.title}</ProjectTitle>
-          <ProjectDescription>{project.description}</ProjectDescription>
-          <CardFooter target="_blank" href={`${project.link}`}>
-            {' '}
-            <FooterText>{project.footerText}</FooterText>
-            <img style={{ marginBottom: 0 }} src={Arrow} alt="" />{' '}
-          </CardFooter>
-        </div>
-      </div>
+      <ProjectText>
+        <ProjectTitle>{project.title}</ProjectTitle>
+        <ProjectDescription>{project.description}</ProjectDescription>
+        <CardFooter target="_blank" href={`${project.link}`}>
+          {' '}
+          <FooterText>{project.footerText}</FooterText>
+          <img style={{ marginBottom: 0 }} src={Arrow} alt="" />{' '}
+        </CardFooter>
+      </ProjectText>
     </div>
   )
 }
+
+const ProjectText = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+`
 
 const ProjectTitle = styled.h3`
   font-size: 1.25rem;
@@ -54,6 +58,7 @@ const ProjectTitle = styled.h3`
 `
 
 const ProjectDescription = styled.p`
+  flex: 1;
   margin: 1.5rem;
   padding: 0 1.5rem;
 `

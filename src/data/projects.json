@@ -1,22 +1,26 @@
-[{
-    "img": "movieicon.svg",
-    "title": "Awesomovie",
-    "description": "A movie browser with inbuilt watchlist functionality. Uses localstorage to store movies on a watchlist between browser sessions. Built with ReactJS.",
-    "link": "https://priceless-austin-5c9f85.netlify.com/",
-    "footerText": "Live demo"
+[
+  {
+    "img": "confirmed.svg",
+    "title": "IT-Fixer.dk",
+    "description":
+      "A website to support my online IT support business. The page serves as a way for customers to get in touch. Developed using Gatsby and TailwindCSS.",
+    "link": "https://it-fixer.dk",
+    "footerText": "Visit website"
   },
   {
     "img": "search.svg",
-    "title": "Gif-searcher",
-    "description": "Gif-searcher uses the Giphy API to fetch gifs based on input from the user, and displays the results in a grid. Built with VueJS and hosted with Netlify.",
-    "link": "https://compassionate-bassi-130e50.netlify.com/",
-    "footerText": "Live demo"
+    "title": "Youtube Downloader",
+    "description":
+      "Search for Youtube videos and download them directly on to your machine. Uses a NodeJS server on the backend, with Vue and TailwindCSS on the frontend.",
+    "link": "https://ytdownload.netlify.com/",
+    "footerText": "Visit website"
   },
   {
-    "img": "bc.svg",
-    "title": "Cryptocurrency tracker",
-    "description": "A cryptocurrency tracker that shows the price of the 20 most popular cryptocurrencies, with livesearch and conversion capability. Currently offline.",
-    "link": "https://github.com/mbrodt/Crypto-tracker",
-    "footerText": "Code available on GitHub"
+    "img": "movienight.svg",
+    "title": "Awesomovie",
+    "description":
+      "A movie browser with inbuilt watchlist functionality. Uses localstorage to store movies on a watchlist between browser sessions. Built with ReactJS.",
+    "link": "https://priceless-austin-5c9f85.netlify.com/",
+    "footerText": "Visit website"
   }
 ]
