@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Arrow from '../assets/arrow.svg'
 
 const Projects = ({ projects }) => {
-  console.log('props', projects)
   return (
     <section
       id="projects"
@@ -23,7 +22,6 @@ const Projects = ({ projects }) => {
 
 // import Test from '../assets/bc.svg'
 const Project = ({ project }) => {
-  // console.log(project)
   return (
     <div className="project-card" key={project}>
       <img

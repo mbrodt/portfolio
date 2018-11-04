@@ -11,21 +11,11 @@ const Intro = () => (
       style={{ display: 'flex', alignItems: 'center' }}
     >
       <div style={{ width: '80%', textAlign: 'center' }}>
-        {/* <img
-          src="https://res.cloudinary.com/dnbiaqcir/image/upload/v1541257535/newprofile.jpg"
+        <img
+          src="https://res.cloudinary.com/dnbiaqcir/image/upload/c_scale,w_300/v1541261196/profileround.jpg"
           className="profile-pic"
           alt=""
-        /> */}
-
-        <Image
-          className="profile-pic"
-          cloudName="dnbiaqcir"
-          publicId="profileround"
-          width="300"
-          crop="scale"
-        >
-          {/* <Transformation radius="max" /> */}
-        </Image>
+        />
       </div>
       <div className="intro-text-container" style={{ width: '80%' }}>
         <h1 className="role-text">

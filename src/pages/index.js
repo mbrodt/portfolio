@@ -12,7 +12,6 @@ if (typeof window !== 'undefined') {
 }
 
 const IndexPage = ({ data }) => {
-  console.log(data)
   return (
     <div>
       <Intro />

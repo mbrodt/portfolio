@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
 const Blog = ({ blogData }) => {
-  console.log('hey', blogData)
   return (
     <section id="blog" className="container">
       <h2 style={{ textAlign: 'center' }}>Blog posts</h2>
