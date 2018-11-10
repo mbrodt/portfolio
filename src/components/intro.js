@@ -19,7 +19,7 @@ const Intro = () => (
       </div>
       <div className="intro-text-container" style={{ width: '80%' }}>
         <h1 className="role-text">
-          Front-End <span className="orange">Developer</span>
+          Front-End <span className="text-indigo">Developer</span>
         </h1>
         <p className="">
           Hey! My name is Mads Brodt, and I’m a front-end developer living in

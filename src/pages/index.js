@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Header from '../components/header'
 import Intro from '../components/intro'
 import Projects from '../components/projects'
 import Blog from '../components/blog'
@@ -13,7 +14,8 @@ if (typeof window !== 'undefined') {
 
 const IndexPage = ({ data }) => {
   return (
-    <div>
+    <div className="font-sans container mx-auto text-black">
+      <Header />
       <Intro />
       <Projects projects={data.allProjectsJson.edges} />
       <Blog blogData={data.allMarkdownRemark} />

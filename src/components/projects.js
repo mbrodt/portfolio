@@ -4,13 +4,8 @@ import Arrow from '../assets/arrow.svg'
 
 const Projects = ({ projects }) => {
   return (
-    <section
-      id="projects"
-      className="container"
-      style={{ textAlign: 'center' }}
-    >
+    <section id="projects" className="container text-center">
       <h2>Projects</h2>
-      <div className="line" />
       <div className="grid">
         {projects.map(project => (
           <Project key={project.node.title} project={project.node} />
@@ -23,21 +18,27 @@ const Projects = ({ projects }) => {
 // import Test from '../assets/bc.svg'
 const Project = ({ project }) => {
   return (
-    <div className="project-card" key={project}>
+    <div className="bg-white rounded-lg flex p-4" key={project}>
       <img
-        className="project-img"
+        className="w-1/5"
         src={require(`../assets/${project.img}`)}
-        alt="Should be image"
+        alt="Illustration of the project"
       />
-      <ProjectText>
-        <ProjectTitle>{project.title}</ProjectTitle>
-        <ProjectDescription>{project.description}</ProjectDescription>
-        <CardFooter target="_blank" href={`${project.link}`}>
+      <div className="w-4/5 mx-auto flex flex-col justify-between text-left m-4 px-8">
+        <h3 className="mb-4">{project.title}</h3>
+        <p className="text-grey-darkest leading-normal mb-4">
+          {project.description}
+        </p>
+        <a
+          target="_blank"
+          href={`${project.link}`}
+          className="no-underline bg-indigo text-white flex h-10 w-48 items-center justify-around"
+        >
           {' '}
-          <FooterText>{project.footerText}</FooterText>
-          <img style={{ marginBottom: 0 }} src={Arrow} alt="" />{' '}
-        </CardFooter>
-      </ProjectText>
+          <p>{project.footerText}</p>
+          <img className="mb-0" src={Arrow} alt="" />{' '}
+        </a>
+      </div>
     </div>
   )
 }

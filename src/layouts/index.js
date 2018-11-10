@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Header from '../components/header'
 import Helmet from 'react-helmet'
-import './index.css'
+// import './index.css'
+import './generated.css'
 require('prismjs/themes/prism-tomorrow.css')
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div className="bg-grey-lighter">
     <Helmet
       meta={[
         {
@@ -21,7 +21,7 @@ const Layout = ({ children, data }) => (
       <title>My Title</title> */}
       <html lang="en" />
     </Helmet>
-    <Header />
+
     {children()}
   </div>
 )
