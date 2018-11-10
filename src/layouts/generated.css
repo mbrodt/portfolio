@@ -6129,6 +6129,10 @@ table {
   z-index: auto;
 }
 
+.container {
+  max-width: 860px;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
