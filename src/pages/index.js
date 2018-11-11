@@ -14,12 +14,14 @@ if (typeof window !== 'undefined') {
 
 const IndexPage = ({ data }) => {
   return (
-    <div className="font-sans container mx-auto text-black">
+    <div className="font-sans text-black">
       <Header />
-      <Intro />
-      <Projects projects={data.allProjectsJson.edges} />
-      <Blog blogData={data.allMarkdownRemark} />
-      <Contact />
+      <div className="container mx-auto ">
+        <Intro />
+        <Projects projects={data.allProjectsJson.edges} />
+        <Blog blogData={data.allMarkdownRemark} />
+        <Contact />
+      </div>
     </div>
   )
 }
@@ -45,13 +47,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
-            featuredImage {
-              childImageSharp {
-                sizes(maxWidth: 600) {
-                  ...GatsbyImageSharpSizes_tracedSVG
-                }
-              }
-            }
+            icon
           }
           fields {
             slug

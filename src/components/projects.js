@@ -4,8 +4,8 @@ import Arrow from '../assets/arrow.svg'
 
 const Projects = ({ projects }) => {
   return (
-    <section id="projects" className="container text-center">
-      <h2>Projects</h2>
+    <section id="projects" className="container text-center my-20">
+      <h2 className="mb-8">Projects</h2>
       <div className="grid">
         {projects.map(project => (
           <Project key={project.node.title} project={project.node} />
