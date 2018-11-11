@@ -14,7 +14,7 @@ if (typeof window !== 'undefined') {
 
 const IndexPage = ({ data }) => {
   return (
-    <div className="font-sans text-black">
+    <div className="font-sans text-grey-darkest">
       <Header />
       <div className="container mx-auto ">
         <Intro />

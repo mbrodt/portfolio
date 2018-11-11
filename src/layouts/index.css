@@ -1,5 +1,9 @@
 @tailwind preflight;
 
+img {
+	margin-bottom: 0
+}
+
 @tailwind components;
 
 .grid {
