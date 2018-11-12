@@ -19,7 +19,7 @@ const Post = ({ post }) => {
   return (
     <Link
       to={post.fields.slug}
-      className="flex items-center no-underline justify-between p-4 border-b-2 border-grey"
+      className="flex items-center no-underline justify-between p-4 border-b-2 border-grey-light hover:bg-grey-light"
     >
       <img
         src={require(`../assets/${post.frontmatter.icon}`)}

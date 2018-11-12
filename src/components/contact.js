@@ -39,7 +39,7 @@ const Contact = () => (
           name="message"
           placeholder="Message"
         />
-        <button className="bg-indigo w-2/5 text-md text-white rounded-lg py-3  self-end">
+        <button className="bg-indigo w-2/5 text-md text-white rounded-lg py-3  self-end hover:bg-indigo-dark">
           Send message
         </button>
       </form>

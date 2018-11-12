@@ -32,11 +32,11 @@ const Project = ({ project }) => {
         <a
           target="_blank"
           href={`${project.link}`}
-          className="no-underline bg-indigo text-white flex h-10 w-48 items-center justify-around"
+          className="no-underline bg-indigo text-white flex h-10 w-48 items-center justify-around visit-website hover:bg-indigo-dark"
         >
           {' '}
           <p>{project.footerText}</p>
-          <img className="mb-0" src={Arrow} alt="" />{' '}
+          <img className="mb-0 arrow-anim" src={Arrow} alt="" />{' '}
         </a>
       </div>
     </div>
