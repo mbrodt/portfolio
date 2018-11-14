@@ -19,7 +19,7 @@ const Post = ({ post }) => {
   return (
     <Link
       to={post.fields.slug}
-      className="flex items-center no-underline justify-between p-4 border-b-2 border-grey-light hover:bg-grey-light"
+      className="flex items-center no-underline justify-between p-4 border-b-2 border-grey-light hover:bg-grey-light m-4 lg:m-0"
     >
       <img
         src={require(`../assets/${post.frontmatter.icon}`)}
@@ -27,10 +27,13 @@ const Post = ({ post }) => {
         className="w-8 mb-0 mr-4"
       />
 
-      <p className="flex-1 font-medium text-black text-xl">
+      <p className="leading-normal flex-1 font-medium text-black text-md sm:text-xl">
         {post.frontmatter.title}
       </p>
-      <p className="text-grey-darker">{post.frontmatter.date}</p>
+      {/* Only show the date on screens larger than 768 px (the tailwind 'md' size) */}
+      {window.innerWidth > 768 && (
+        <p className="text-grey-darker">{post.frontmatter.date}</p>
+      )}
     </Link>
   )
 }

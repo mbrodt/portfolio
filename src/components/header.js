@@ -6,21 +6,21 @@ const Header = () => (
     <ul className="container mx-auto flex justify-between items-center">
       <a
         href="/"
-        className="flex items-center no-underline text-grey-darkest font-bold"
+        className="ml-4 lg:ml-0  flex items-center no-underline text-grey-darkest font-bold"
       >
         <img
-          className="w-8 mr-4"
+          className="w-6 mr-2 sm:w-8 sm:mr-4"
           src={require(`../assets/devicon.svg`)}
           alt=""
         />
-        <span className="text-xl">Mads Brodt</span>
+        <span className="text-lg sm:text-xl">Mads Brodt</span>
       </a>
-      <div className="">
+      <div className="mr-4 lg:mr-0">
         <a className="p-2" href="https://twitter.com/madsbrodt" target="_blank">
-          <TwitterIcon className="w-6" fill="grey-darker" />
+          <TwitterIcon className="w-5 sm:w-6" fill="grey-darker" />
         </a>
         <a className="p-2" href="https://github.com/mbrodt" target="_blank">
-          <GithubIcon className="w-6" fill="grey-darker" />
+          <GithubIcon className="w-5 sm:w-6" fill="grey-darker" />
         </a>
         {/* For some reason the linkedin svg breaks if its a react component, so the fill is hardcoded into the svg */}
         <a
@@ -28,7 +28,11 @@ const Header = () => (
           href="https://www.linkedin.com/in/mads-brodt-nielsen-a35874152/"
           target="_blank"
         >
-          <img className="w-6" src={require(`../assets/linkedin.svg`)} alt="" />
+          <img
+            className="w-5 sm:w-6"
+            src={require(`../assets/linkedin.svg`)}
+            alt=""
+          />
         </a>
       </div>
     </ul>

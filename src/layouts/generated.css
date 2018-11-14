@@ -541,8 +541,7 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
 }
 
@@ -6148,6 +6147,14 @@ img {
 
 .container {
   max-width: 860px;
+}
+
+.grid-gap-1 {
+  grid-gap: 1rem;
+}
+
+.grid-gap-2 {
+  grid-gap: 2rem;
 }
 
 @media (min-width: 576px) {

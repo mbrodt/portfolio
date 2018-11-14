@@ -18,13 +18,16 @@ const Projects = ({ projects }) => {
 // import Test from '../assets/bc.svg'
 const Project = ({ project }) => {
   return (
-    <div className="bg-white rounded-lg flex p-4 shadow-lg" key={project}>
+    <div
+      className="bg-white rounded-lg flex p-2 sm:p-4 shadow-lg m-4"
+      key={project}
+    >
       {/* <img
         className="w-1/5"
         src={require(`../assets/${project.img}`)}
         alt="Illustration of the project"
       /> */}
-      <div className="mx-auto flex flex-col justify-between text-left m-4 px-8">
+      <div className="mx-auto flex flex-col justify-between text-left m-4 px-4 md:px-8">
         <h3 className="mb-4">{project.title}</h3>
         <p className="text-grey-darkest leading-normal mb-4">
           {project.description}
