@@ -27,10 +27,3 @@ img {
 .container {
   max-width: 860px;
 }
-
-.grid-gap-1 {
-  grid-gap: 1rem;
-}
-.grid-gap-2 {
-  grid-gap: 2rem;
-}
