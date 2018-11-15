@@ -1,12 +1,12 @@
 {
   "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "description": "Portfolio of Mads Brodt",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Mads Brodt <madsbrodt3@gmail.com",
   "dependencies": {
     "autoprefixer": "^9.3.1",
     "cloudinary-react": "^1.0.6",
-    "gatsby": "^1.9.247",
+    "gatsby": "^1.9.277",
     "gatsby-cli": "^1.1.58",
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.40",
@@ -35,7 +35,7 @@
   "scripts": {
     "build:css": "postcss src/layouts/index.css -o src/layouts/generated.css",
     "watch:css": "postcss src/layouts/index.css -o src/layouts/generated.css -w",
-    "build": "npm run build:css && gatsby build",
+    "build": "npm run build:css && gatsby build --no-uglify",
     "dev": "run-p watch:css gatsby",
     "gatsby": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
