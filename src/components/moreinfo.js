@@ -1,10 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
 
 const MoreInfo = () => (
   <section id="about">
-    <Heading>Wanna know more?</Heading>
+    <h2 class="text-center m-6">Wanna know more?</h2>
     <div class="mb-4 mx-auto">
       <Link to="/about-me">
         <button className="btn primary-btn">About me</button>
@@ -15,10 +14,5 @@ const MoreInfo = () => (
     </div>
   </section>
 )
-
-const Heading = styled.h2`
-  text-align: center;
-  margin: 1.5rem;
-`
 
 export default MoreInfo

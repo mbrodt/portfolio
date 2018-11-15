@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-// import './index.css'
-import './generated.css'
+import '../layouts/generated.css'
 require('prismjs/themes/prism-tomorrow.css')
 
 const Layout = ({ children, data }) => (
@@ -16,13 +15,10 @@ const Layout = ({ children, data }) => (
       ]}
       title="Mads Brodt"
     >
-      {/* <meta charSet="utf-8" />
-      <meta name="Description" content="" />
-      <title>My Title</title> */}
       <html lang="en" />
     </Helmet>
 
-    {children()}
+    {children}
   </div>
 )
 
@@ -31,16 +27,6 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
 
 // export const query = graphql`
 //   query ProjectsQuery {

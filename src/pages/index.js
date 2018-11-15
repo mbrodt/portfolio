@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
 import Header from '../components/header'
+import Layout from '../components/layout'
 import Intro from '../components/intro'
 import Projects from '../components/projects'
 import Blog from '../components/blog'
@@ -14,15 +15,17 @@ if (typeof window !== 'undefined') {
 
 const IndexPage = ({ data }) => {
   return (
-    <div className="font-sans text-grey-darkest">
-      <Header />
-      <div className="container mx-auto ">
-        <Intro />
-        <Projects projects={data.allProjectsJson.edges} />
-        <Blog blogData={data.allMarkdownRemark} />
-        <Contact />
+    <Layout>
+      <div className="font-sans text-grey-darkest">
+        <Header />
+        <div className="container mx-auto ">
+          <Intro />
+          <Projects projects={data.allProjectsJson.edges} />
+          <Blog blogData={data.allMarkdownRemark} />
+          <Contact />
+        </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
@@ -52,7 +55,6 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 100)
         }
       }
     }

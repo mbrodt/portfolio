@@ -1,7 +1,4 @@
 import React from 'react'
-import profile from '../assets/profileround.jpg'
-
-import { Image, Transformation, CloudinaryContext } from 'cloudinary-react'
 
 const Intro = () => (
   <section

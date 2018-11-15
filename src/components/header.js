@@ -1,5 +1,5 @@
 import React from 'react'
-import { TwitterIcon, GithubIcon, LinkedinIcon } from './svgIcons'
+import { TwitterIcon, GithubIcon } from './svgIcons'
 
 const Header = () => (
   <nav className="bg-grey-lighter fixed top pin-t pin-l border-b-2 border-grey-light w-full py-4">
@@ -16,10 +16,20 @@ const Header = () => (
         <span className="text-lg sm:text-xl">Mads Brodt</span>
       </a>
       <div className="mr-4 lg:mr-0">
-        <a className="p-2" href="https://twitter.com/madsbrodt" target="_blank">
+        <a
+          className="p-2"
+          href="https://twitter.com/madsbrodt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TwitterIcon className="w-5 sm:w-6" fill="grey-darker" />
         </a>
-        <a className="p-2" href="https://github.com/mbrodt" target="_blank">
+        <a
+          className="p-2"
+          href="https://github.com/mbrodt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <GithubIcon className="w-5 sm:w-6" fill="grey-darker" />
         </a>
         {/* For some reason the linkedin svg breaks if its a react component, so the fill is hardcoded into the svg */}
@@ -27,6 +37,7 @@ const Header = () => (
           className="p-2"
           href="https://www.linkedin.com/in/mads-brodt-nielsen-a35874152/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="w-5 sm:w-6"

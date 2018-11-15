@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import Img from 'gatsby-image'
 
 const Blog = ({ blogData }) => {
   return (
