@@ -68,7 +68,9 @@ class Post extends Component {
         </p>
         {/* Only show the date on screens larger than 768 px (the tailwind 'md' size) */}
         {this.state.displayDate && (
-          <p className="text-grey-darker">{this.props.post.frontmatter.date}</p>
+          <p className="text-grey-darker mb-0">
+            {this.props.post.frontmatter.date}
+          </p>
         )}
       </Link>
     )
