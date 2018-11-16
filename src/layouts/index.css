@@ -1,9 +1,5 @@
 @tailwind preflight;
 
-img {
-  margin-bottom: 0;
-}
-
 .arrow-anim {
   transition: transform 0.5s ease-in 0s, opacity 0.3s ease-in;
   opacity: 1;
@@ -26,4 +22,16 @@ img {
 
 .container {
   max-width: 860px;
+}
+
+img {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-bottom: 0;
 }

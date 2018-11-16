@@ -494,10 +494,6 @@ table {
   border-collapse: collapse;
 }
 
-img {
-  margin-bottom: 0;
-}
-
 .arrow-anim {
   transition: opacity .3s ease-in, -webkit-transform .5s ease-in 0s;
   transition: transform .5s ease-in 0s, opacity .3s ease-in;
@@ -6147,6 +6143,18 @@ img {
 
 .container {
   max-width: 860px;
+}
+
+img {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-bottom: 0;
 }
 
 @media (min-width: 576px) {
