@@ -3,13 +3,13 @@ import { TwitterIcon, GithubIcon } from './svgIcons'
 
 const Header = () => (
   <nav className="bg-grey-lighter fixed top pin-t pin-l border-b-2 border-grey-light w-full py-4">
-    <ul className="container mx-auto flex justify-between items-center">
+    <ul className="container mx-auto flex justify-between items-center mb-0">
       <a
         href="/"
         className="ml-4 lg:ml-0  flex items-center no-underline text-grey-darkest font-bold"
       >
         <img
-          className="w-6 mr-2 sm:w-8 sm:mr-4"
+          className="w-6 mr-2 sm:w-8 sm:mr-4 mb-0"
           src={require(`../assets/devicon.svg`)}
           alt=""
         />
@@ -40,7 +40,7 @@ const Header = () => (
           rel="noopener noreferrer"
         >
           <img
-            className="w-5 sm:w-6"
+            className="w-5 sm:w-6 mb-0"
             src={require(`../assets/linkedin.svg`)}
             alt=""
           />

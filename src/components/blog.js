@@ -5,7 +5,7 @@ const Blog = ({ blogData }) => {
   return (
     <section id="blog" className="my-20">
       <h2 className="text-center mb-8">Blog posts</h2>
-      <ul>
+      <ul className="mb-0">
         {blogData.edges.map(({ node }) => (
           <Post post={node} key={node.frontmatter.title} />
         ))}
@@ -63,7 +63,7 @@ class Post extends Component {
           className="w-8 mb-0 mr-4"
         />
 
-        <p className="leading-normal flex-1 font-medium text-black text-md sm:text-xl">
+        <p className="leading-normal flex-1 font-medium text-black text-md sm:text-xl mb-0">
           {this.props.post.frontmatter.title}
         </p>
         {/* Only show the date on screens larger than 768 px (the tailwind 'md' size) */}

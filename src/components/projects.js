@@ -38,7 +38,7 @@ const Project = ({ project }) => {
           className="no-underline bg-indigo text-white flex h-10 w-48 items-center justify-around visit-website hover:bg-indigo-dark"
         >
           {' '}
-          <p>{project.footerText}</p>
+          <p className="mb-0">{project.footerText}</p>
           <img className="mb-0 arrow-anim" src={Arrow} alt="" />{' '}
         </a>
       </div>
