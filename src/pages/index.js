@@ -16,15 +16,10 @@ if (typeof window !== 'undefined') {
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <div className="font-sans text-grey-darkest">
-        <Header />
-        <div className="container mx-auto ">
-          <Intro />
-          <Projects projects={data.allProjectsJson.edges} />
-          <Blog blogData={data.allMarkdownRemark} />
-          <Contact />
-        </div>
-      </div>
+      <Intro />
+      <Projects projects={data.allProjectsJson.edges} />
+      <Blog blogData={data.allMarkdownRemark} />
+      <Contact />
     </Layout>
   )
 }

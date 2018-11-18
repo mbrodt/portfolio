@@ -1,16 +1,26 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import Header from '../components/header'
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  console.log('post', post)
   return (
-    <div>
-      <div>
-        <span>{post.frontmatter.date}</span>
-        <h1>{post.frontmatter.title}</h1>
+    <Layout>
+      <div className="pt-24 mb-10 sm:mb-20 sm:pt-32 leading-normal w-full p-4  sm:w-2/3 sm:mx-auto sm:p-0 lg:mx-0 ">
+        <div className="mb-8">
+          <img
+            src={require(`../assets/${post.frontmatter.icon}`)}
+            alt=""
+            className="w-16 mb-0 mr-4"
+          />
+          <h1 className="mb-2">{post.frontmatter.title}</h1>
+          <p className="text-sm text-grey-dark">{post.frontmatter.date}</p>
+        </div>
+        <p dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
-      <p dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
+    </Layout>
   )
 }
 
@@ -44,7 +54,8 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD MMMM, YYYY")
+        date(formatString: "MMMM DD, YYYY")
+        icon
       }
     }
   }

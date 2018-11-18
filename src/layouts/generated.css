@@ -6145,18 +6145,6 @@ table {
   max-width: 860px;
 }
 
-img {
-  margin-bottom: 0;
-}
-
-p {
-  margin-bottom: 0;
-}
-
-ul {
-  margin-bottom: 0;
-}
-
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
