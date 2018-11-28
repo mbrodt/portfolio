@@ -1,14 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Header from '../components/header'
 
 export default ({ data }) => {
   const post = data.markdownRemark
   console.log('post', post)
   return (
     <Layout>
-      <div className="pt-24 mb-10 sm:mb-20 sm:pt-32 leading-normal w-full p-4  sm:w-2/3 sm:mx-auto sm:p-0 lg:mx-0 ">
+      <div className="pt-24 sm:pt-32 leading-normal w-full p-4  sm:w-2/3 sm:mx-auto sm:p-0 lg:mx-0 min-h-screen ">
         <div className="mb-8">
           <img
             src={require(`../assets/${post.frontmatter.icon}`)}
@@ -18,7 +17,7 @@ export default ({ data }) => {
           <h1 className="mb-2">{post.frontmatter.title}</h1>
           <p className="text-sm text-grey-dark">{post.frontmatter.date}</p>
         </div>
-        <p dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
   )

@@ -6,7 +6,7 @@ import '../layouts/generated.css'
 require('prismjs/themes/prism-tomorrow.css')
 
 const Layout = ({ children, data }) => (
-  <div className="bg-grey-lighter font-sans">
+  <div className="bg-grey-lighter font-sans pb-10 sm:pb-20">
     <Helmet
       meta={[
         {
