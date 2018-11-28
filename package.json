@@ -38,8 +38,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build:css": "postcss src/layouts/index.css -o src/layouts/generated.css",
-    "watch:css": "postcss src/layouts/index.css -o src/layouts/generated.css -w",
+    "build:css": "postcss src/css/index.css -o src/css/generated.css",
+    "watch:css": "postcss src/css/index.css -o src/css/generated.css -w",
     "build": "npm run build:css && gatsby build",
     "dev": "run-p watch:css gatsby",
     "gatsby": "gatsby develop",

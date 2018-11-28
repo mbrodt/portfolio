@@ -4,7 +4,6 @@ import Layout from '../components/layout'
 
 export default ({ data }) => {
   const post = data.markdownRemark
-  console.log('post', post)
   return (
     <Layout>
       <div className="pt-24 sm:pt-32 leading-normal w-full p-4  sm:w-2/3 sm:mx-auto sm:p-0 lg:mx-0 min-h-screen ">
