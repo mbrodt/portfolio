@@ -5,7 +5,7 @@ const Blog = ({ blogData }) => {
   return (
     <section id="blog" className="my-20">
       <h2 className="text-center mb-8">Blog posts</h2>
-      <ul className="mb-0">
+      <ul className="mb-0 ml-0">
         {blogData.edges.map(({ node }) => (
           <Post post={node} key={node.frontmatter.title} />
         ))}
