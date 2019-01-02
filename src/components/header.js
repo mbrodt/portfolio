@@ -2,7 +2,7 @@ import React from 'react'
 import { TwitterIcon, GithubIcon } from './svgIcons'
 
 const Header = () => (
-  <nav className="bg-grey-lighter fixed top pin-t pin-l border-b-2 border-grey-light w-full py-4">
+  <nav className="bg-grey-lighter fixed top pin-t pin-l shadow w-full py-4">
     <ul className="container mx-auto flex justify-between items-center mb-0">
       <a
         href="/"
@@ -17,7 +17,7 @@ const Header = () => (
       </a>
       <div className="mr-4 lg:mr-0">
         <a
-          className="p-2"
+          className="p-2 hover:bg-grey-light"
           href="https://twitter.com/madsbrodt"
           target="_blank"
           rel="noopener noreferrer"
@@ -25,7 +25,7 @@ const Header = () => (
           <TwitterIcon className="w-5 sm:w-6" fill="grey-darker" />
         </a>
         <a
-          className="p-2"
+          className="p-2 hover:bg-grey-light"
           href="https://github.com/mbrodt"
           target="_blank"
           rel="noopener noreferrer"
@@ -34,7 +34,7 @@ const Header = () => (
         </a>
         {/* For some reason the linkedin svg breaks if its a react component, so the fill is hardcoded into the svg */}
         <a
-          className="p-2"
+          className="p-2 hover:bg-grey-light"
           href="https://www.linkedin.com/in/mads-brodt-nielsen-a35874152/"
           target="_blank"
           rel="noopener noreferrer"

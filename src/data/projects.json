@@ -1,25 +1,41 @@
 [
   {
+    "img": "movienight.svg",
+    "title": "Tandlægehuset Havdrup",
+    "label": "Client",
+    "description": "Custom made website for a dentist practice. Focus is on simple design, and allowing the business to edit information on the fly with a CMS. Built using Contentful and Gatsby.",
+    "link": "https://tandlaegehuset-havdrup.netlify.com/",
+    "footerText": "Visit website"
+  },
+  {
+    "img": "movienight.svg",
+    "title": "Henriette Galst",
+    "label": "Client",
+    "description": "Improved the website of psychotherapist Henriette Galst. Work included design optimizations and improving the CMS experience. Built with WordPress.",
+    "link": "http://www.henriettegalst.dk/",
+    "footerText": "Visit website"
+  },
+  {
     "img": "confirmed.svg",
-    "title": "IT-Fixer.dk",
-    "description":
-      "A website to support my online IT support business. The page serves as a way for customers to get in touch. Developed using Gatsby and TailwindCSS.",
+    "title": "IT-Fixer",
+    "label": "Personal",
+    "description": "A website to support my online IT support business. The page serves as a way for customers to get in touch. Developed using Gatsby and TailwindCSS.",
     "link": "https://it-fixer.dk",
     "footerText": "Visit website"
   },
   {
     "img": "search.svg",
     "title": "Youtube Downloader",
-    "description":
-      "Search for Youtube videos and download them directly on to your machine. Uses a NodeJS server on the backend, with Vue and TailwindCSS on the frontend.",
+    "label": "Personal",
+    "description": "Search for Youtube videos and download them directly on to your machine. Uses a NodeJS server on the backend, with Vue and TailwindCSS on the frontend.",
     "link": "https://ytdownload.netlify.com/",
     "footerText": "Visit website"
   },
   {
     "img": "movienight.svg",
     "title": "Awesomovie",
-    "description":
-      "A movie browser with inbuilt watchlist functionality. Uses localstorage to store movies on a watchlist between browser sessions. Built with ReactJS.",
+    "label": "Personal",
+    "description": "A movie browser with inbuilt watchlist functionality. Uses localstorage to store movies on a watchlist between browser sessions. Built with ReactJS.",
     "link": "https://priceless-austin-5c9f85.netlify.com/",
     "footerText": "Visit website"
   }

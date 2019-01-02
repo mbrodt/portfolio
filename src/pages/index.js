@@ -30,6 +30,7 @@ export const query = graphql`
         node {
           img
           title
+          label
           description
           link
           footerText

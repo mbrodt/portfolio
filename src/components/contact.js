@@ -19,7 +19,7 @@ const Contact = () => (
           </span>
         </p>
         <input
-          className="input-field border-b-2 border-indigo mb-2  h-12 px-4 bg-grey-lighter"
+          className="input-field border-b-2 border-indigo mb-2  h-12 px-4 bg-grey-lighter "
           type="text"
           id="name"
           name="name"

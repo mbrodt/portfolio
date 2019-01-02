@@ -10,7 +10,7 @@ const Layout = ({ children, data }) => (
     <Helmet
       meta={[
         {
-          name: 'description',
+          name: 'Mads Brodt Portfolio',
           content: 'A portfolio site for Mads Brodt',
         },
       ]}
@@ -26,7 +26,7 @@ const Layout = ({ children, data }) => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.array,
 }
 
 export default Layout

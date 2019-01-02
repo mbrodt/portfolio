@@ -8,6 +8,18 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Mads Brodt',
+        short_name: 'Mads Brodt',
+        start_url: '/',
+        background_color: '#6574cd',
+        theme_color: '#6574cd',
+        display: 'minimal-ui',
+        icon: 'src/assets/devicon.svg', // This path is relative to the root of the site.
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [

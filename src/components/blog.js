@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
 
 const Blog = ({ blogData }) => {
@@ -14,67 +14,25 @@ const Blog = ({ blogData }) => {
   )
 }
 
-// const Post = ({ post }) => {
-//   return (
-//     <Link
-//       to={post.fields.slug}
-//       className="flex items-center no-underline justify-between p-4 border-b-2 border-grey-light hover:bg-grey-light m-4 lg:m-0"
-//     >
-//       <img
-//         src={require(`../assets/${post.frontmatter.icon}`)}
-//         alt=""
-//         className="w-8 mb-0 mr-4"
-//       />
+const Post = props => (
+  <Link
+    to={props.post.fields.slug}
+    className="flex items-center no-underline justify-between p-4 border-b-2 border-grey-light hover:bg-grey-light m-4 lg:m-0"
+  >
+    <img
+      src={require(`../assets/${props.post.frontmatter.icon}`)}
+      alt=""
+      className="w-8 mb-0 mr-4"
+    />
 
-//       <p className="leading-normal flex-1 font-medium text-black text-md sm:text-xl">
-//         {post.frontmatter.title}
-//       </p>
-//       {/* Only show the date on screens larger than 768 px (the tailwind 'md' size) */}
-//       {window.innerWidth > 768 && (
-//         <p className="text-grey-darker">{post.frontmatter.date}</p>
-//       )}
-//     </Link>
-//   )
-// }
+    <p className="leading-normal flex-1 font text-black text-md sm:text-lg mb-0 sm:mr-8">
+      {props.post.frontmatter.title}
+    </p>
 
-class Post extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      displayDate: true,
-    }
-  }
-
-  componentDidMount() {
-    let displayDate = window.innerWidth > 768
-    this.setState({
-      displayDate,
-    })
-  }
-  render() {
-    return (
-      <Link
-        to={this.props.post.fields.slug}
-        className="flex items-center no-underline justify-between p-4 border-b-2 border-grey-light hover:bg-grey-light m-4 lg:m-0"
-      >
-        <img
-          src={require(`../assets/${this.props.post.frontmatter.icon}`)}
-          alt=""
-          className="w-8 mb-0 mr-4"
-        />
-
-        <p className="leading-normal flex-1 font-medium text-black text-md sm:text-xl mb-0">
-          {this.props.post.frontmatter.title}
-        </p>
-        {/* Only show the date on screens larger than 768 px (the tailwind 'md' size) */}
-        {this.state.displayDate && (
-          <p className="text-grey-darker mb-0">
-            {this.props.post.frontmatter.date}
-          </p>
-        )}
-      </Link>
-    )
-  }
-}
+    <p className="hidden sm:block text-grey-darker mb-0">
+      {props.post.frontmatter.date}
+    </p>
+  </Link>
+)
 
 export default Blog
