@@ -32,7 +32,7 @@ const Project = ({ project }) => {
           target="_blank"
           rel="noopener noreferrer"
           href={`${project.link}`}
-          className="no-underline bg-indigo text-white flex h-10 w-48 items-center justify-around visit-website hover:bg-indigo-dark"
+          className="no-underline bg-indigo text-white flex h-10 w-48 items-center justify-around visit-website hover:bg-indigo-dark w-full"
         >
           {' '}
           <p className="mb-0">{project.footerText}</p>
@@ -46,7 +46,7 @@ const Project = ({ project }) => {
 const Label = ({ labelText }) => {
   const classes = [
     'text-xs',
-    'px-4',
+    'px-3',
     'py-2',
     'rounded-full',
     'text-center',
