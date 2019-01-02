@@ -2,7 +2,11 @@ import React from 'react'
 import { TwitterIcon, GithubIcon } from './svgIcons'
 
 const Header = () => (
+<<<<<<< HEAD
   <nav className="bg-grey-lighter fixed top pin-t pin-l shadow w-full py-4">
+=======
+  <nav className="bg-grey-lighter fixed top pin-t pin-l shadow-md w-full py-4">
+>>>>>>> df26fe679a44546618023c09dc6375e731175619
     <ul className="container mx-auto flex justify-between items-center mb-0">
       <a
         href="/"
