@@ -1,0 +1,8 @@
+.hide {
+  transform: translateY(300px);
+  opacity: 0;
+}
+.fade-in {
+  transform: translateY(0);
+  opacity: 1;
+}
