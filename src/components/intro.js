@@ -16,10 +16,10 @@ const Intro = () => (
       </h1>
       <p className="leading-normal mb-8 text-lg sm:text-xl">
         Hey! My name is Mads Brodt, and I’m a front-end developer living in
-        Denmark. I love technology, learning and helping others. If you need
-        help with your next digital product, I can probably be of service. I
-        specialize in web design & development and I always strive to create
-        high quality products with focus on the end users.
+        Denmark. I design, create and support websites and applications for clients and for fun.
+        So if you need help with your next digital product, I can probably be of service.
+        I love technology, learning and helping others, and I always strive to create
+        high quality products.
       </p>
       <p className="leading-normal text-lg sm:text-xl">
         If you'd like to work with me, check out some of my projects to see if
