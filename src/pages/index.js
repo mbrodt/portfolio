@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Intro from '../components/intro'
 import Projects from '../components/projects'
+import Skills from '../components/skills'
 import Blog from '../components/blog'
 import Contact from '../components/contact'
 
@@ -17,6 +18,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Intro />
       <Projects projects={data.allProjectsJson.edges} />
+      <Skills />
       <Blog blogData={data.allMarkdownRemark} />
       <Contact />
     </Layout>

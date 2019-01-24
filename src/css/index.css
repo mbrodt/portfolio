@@ -23,3 +23,20 @@
 .container {
   max-width: 860px;
 }
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.skill-transition {
+	transition: all 0.5s ease
+}
+
+.skill-transition:hover {
+	transform: scale(1.5)
+}
