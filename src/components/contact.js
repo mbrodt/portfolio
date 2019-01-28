@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Contact = () => (
-  <section id="contact">
+  <section id="contact" data-aos="fade-up" data-aos-delay="200">
     <div className="container">
       <form
         name="contact"

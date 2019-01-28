@@ -15,7 +15,7 @@ import Gatsby from '../assets/gatsby.png'
 
 const Skills = () => {
   return (
-    <section id="skills">
+    <section id="skills" data-aos="fade-right">
       <h2 className="text-center mb-8">Skills</h2>
       <div className="bg-indigo-darkest full-width py-10 sm:py-20 px-6 sm:px-10 flex justify-center flex-wrap ">
         <Skill skill={HTMLSkill} />
@@ -36,7 +36,11 @@ const Skills = () => {
 }
 
 const Skill = ({ skill }) => (
-  <img className="m-6 h-16 opacity-25 hover:opacity-100 skill-transition" src={skill} alt="" />
+  <img
+    className="m-6 h-16 opacity-25 hover:opacity-100 skill-transition"
+    src={skill}
+    alt=""
+  />
 )
 
 export default Skills

@@ -30,7 +30,7 @@ class Layout extends React.Component {
           <div
             id="main-container"
             className="container mx-auto hide"
-            style={{ transition: 'all 0.7s ease' }}
+            // style={{ transition: 'all 0.7s ease' }}
           >
             {this.props.children}
           </div>

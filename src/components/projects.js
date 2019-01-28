@@ -3,7 +3,12 @@ import Arrow from '../assets/arrow.svg'
 
 const Projects = ({ projects }) => {
   return (
-    <section id="projects" className="container text-center my-20">
+    <section
+      data-aos="fade-up"
+      data-aos-delay="300"
+      id="projects"
+      className="container text-center my-20"
+    >
       <h2 className="mb-8">Projects</h2>
       <div className="flex flex-wrap justify-center sm:m-8 md:m-0">
         {projects.map(project => (

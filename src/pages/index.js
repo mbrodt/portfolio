@@ -1,5 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import Layout from '../components/layout'
 import Intro from '../components/intro'
 import Projects from '../components/projects'
@@ -11,6 +13,7 @@ if (typeof window !== 'undefined') {
   // Make scroll behavior of internal links smooth
   // eslint-disable-next-line global-require
   require('smooth-scroll')('a[href*="#"]')
+  AOS.init()
 }
 
 const IndexPage = ({ data }) => {

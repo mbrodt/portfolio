@@ -3,8 +3,10 @@ import Link from 'gatsby-link'
 
 const Blog = ({ blogData }) => {
   return (
-    <section id="blog" className="my-20">
-      <h2 className="text-center mb-8">Blog posts</h2>
+    <section className="my-20" data-aos="fade-left">
+      <h2 id="blog" className="text-center mb-8">
+        Blog posts
+      </h2>
       <ul className="mb-0 ml-0">
         {blogData.edges.map(({ node }) => (
           <Post post={node} key={node.frontmatter.title} />
