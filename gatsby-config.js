@@ -3,6 +3,7 @@ module.exports = {
     title: 'Mads Brodt',
   },
   plugins: [
+    'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
