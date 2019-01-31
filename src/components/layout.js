@@ -23,6 +23,7 @@ class Layout extends React.Component {
           ]}
           title="Mads Brodt"
         >
+       <body className="overflow-hidden" />
           <html lang="en" />
         </Helmet>
         <Header />
