@@ -1,7 +1,8 @@
 ---
-title: "Building a Gif Searcher with Vue and the Giphy API"
-date: "2018-04-15"
-icon: "vue.svg"
+title: 'Building a Gif Searcher with Vue and the Giphy API'
+date: '2018-04-15'
+icon: 'vue.svg'
+type: 'blog-post'
 ---
 
 Welcome to this tutorial, I'm happy you made it here. This will be a tutorial on how to fetch and display gifs with Vue, retrieved from the giphy API. We will cover the following parts:
@@ -49,23 +50,22 @@ So far, we just got the boilerplate Vue project running. For the sake of simplic
 
 ```html
 <template>
-  <div id="app">
-  </div>
+  <div id="app"></div>
 </template>
 
 <script>
-export default {};
+  export default {}
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>
 ```
 
@@ -82,8 +82,7 @@ Let’s add those to our template like so:
 <template>
   <div id="app">
     <h1>Amazing Gif Searcher</h1>
-    <input type="text">
-    <button class="button">Search</button>
+    <input type="text" /> <button class="button">Search</button>
   </div>
 </template>
 ```
@@ -113,7 +112,7 @@ input {
 Now, we want to use Vue to store whatever the user types in the search input field. We’ll need to use this to request the appropriate gifs from the API, so to accomplish this, we’ll add a `v-model` directive to our input field, and bind this to a `searchTerm` variable in our data. Make your HTML look like this:
 
 ```html
-<input v-model="searchTerm" type="text">
+<input v-model="searchTerm" type="text" />
 ```
 
 And your `<script>` tag look like this:
@@ -152,7 +151,7 @@ export default {
 And add the following to your button:
 
 ```html
-<button class="button" @click=getGifs()>Search</button>
+<button class="button" @click="getGifs()">Search</button>
 ```
 
 You can verify that everything is working by typing something in the input field, clicking the button, and opening up your console. You should see whatever you wrote in the input written to the console. We’re finally ready to actually retrieve some gifs!
@@ -247,7 +246,7 @@ What’s happening here is a few steps that may seem weird, but allow us to get 
 
 ```html
 <div class="gif-container">
-  <img v-for="gif in gifs" :src="gif" :key="gif.id">
+  <img v-for="gif in gifs" :src="gif" :key="gif.id" />
 </div>
 ```
 

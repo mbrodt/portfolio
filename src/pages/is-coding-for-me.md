@@ -1,7 +1,8 @@
 ---
-title: "Is coding for me?"
-date: "2018-04-23"
-icon: "devicon.svg"
+title: 'Is coding for me?'
+date: '2018-04-23'
+icon: 'devicon.svg'
+type: 'blog-post'
 ---
 
 Yes. Yes it is.

@@ -2,6 +2,7 @@
 title: 'Work journal 21/1 - 27/1'
 date: '2019-01-27'
 icon: 'journal.svg'
+type: 'journal'
 ---
 
 I'm writing this work journal as an experiment. I think reflection can be a very powerful tool, and a weekly journal might be a nice way to reflect on the learnings of the week, but also to show yourself if you feel down or feel like you're not progressing - as a sort of proof that you actually are.

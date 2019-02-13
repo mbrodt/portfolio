@@ -2,6 +2,7 @@
 title: 'Work journal 28/1 - 3/2'
 date: '2019-02-01'
 icon: 'journal.svg'
+type: 'journal'
 ---
 
 Back for another work journal update. I'm posting this a few days early as I am going skiing tomorrow, and will be gone the entirety of next week (so no update next week).

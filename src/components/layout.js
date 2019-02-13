@@ -23,11 +23,11 @@ class Layout extends React.Component {
           ]}
           title="Mads Brodt"
         >
-       <body className="overflow-hidden" />
+          <body className="overflow-hidden" />
           <html lang="en" />
         </Helmet>
         <Header />
-        <div className="text-grey-darkest">
+        <div className="text-grey-darkest pt-24 sm:pt-32">
           <div
             id="main-container"
             className="container mx-auto hide"

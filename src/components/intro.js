@@ -4,7 +4,7 @@ const Intro = () => (
   <section
     data-aos="fade-up"
     id="home"
-    className="container flex pt-24 mb-10 sm:mb-20 sm:pt-32 justify-center lg:justify-start "
+    className="container flex mb-10 sm:mb-20 justify-center lg:justify-start "
   >
     {/* <img
         src="https://res.cloudinary.com/dnbiaqcir/image/upload/c_scale,w_300/v1541261196/profileround.jpg"
@@ -12,7 +12,7 @@ const Intro = () => (
         alt=""
       /> */}
     <div className="intro-text-container w-4/5">
-      <h1 className="mb-8 text-2xl sm:text-3xl ">
+      <h1 className="mb-8 text-2xl sm:text-3xl">
         Front-End <span className="text-indigo">Developer</span>
       </h1>
       <p className="leading-normal mb-8 text-lg sm:text-xl">
