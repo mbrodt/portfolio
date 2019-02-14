@@ -501,10 +501,10 @@ table {
   opacity: 1;
 }
 
-.visit-website:hover img {
+a:hover .arrow-anim {
   opacity: 0;
-  -webkit-transform: translateX(60px);
-          transform: translateX(60px);
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 .container {

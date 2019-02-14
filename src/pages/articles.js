@@ -14,9 +14,9 @@ const Articles = ({ data }) => {
   return (
     <Layout>
       <h1 className="text-2xl sm:text-3xl mb-8">Articles</h1>
-      <h3 className="mb-4">All blog posts</h3>
+      <h3 className="mb-4">Blog posts</h3>
       <PostList posts={blogPosts} />
-      <h3 className="mb-4">All work journals</h3>
+      <h3 className="mb-4">Work journals</h3>
       <PostList posts={journalPosts} />
     </Layout>
   )

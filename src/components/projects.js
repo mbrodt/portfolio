@@ -1,5 +1,5 @@
 import React from 'react'
-import Arrow from '../assets/arrow.svg'
+import Arrow from './arrow'
 
 const Projects = ({ projects }) => {
   return (
@@ -37,11 +37,11 @@ const Project = ({ project }) => {
           target="_blank"
           rel="noopener noreferrer"
           href={`${project.link}`}
-          className="no-underline bg-indigo text-white flex h-10 w-48 items-center justify-around visit-website hover:bg-indigo-dark w-full"
+          className="no-underline bg-indigo text-white flex h-10 w-48 items-center justify-around hover:bg-indigo-dark w-full"
         >
           {' '}
           <p className="mb-0">{project.footerText}</p>
-          <img className="mb-0 arrow-anim" src={Arrow} alt="" />{' '}
+          <Arrow />
         </a>
       </div>
     </div>
