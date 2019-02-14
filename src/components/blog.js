@@ -14,7 +14,7 @@ const Blog = ({ blogData }) => {
         Blog posts
       </h2>
       <PostList posts={blogPosts} />
-      <div className="flex justify-end">
+      <div className="flex justify-end pr-4 lg:pr-0">
         <Link
           className="no-underline text-indigo hover:text-indigo-dark inline-flex items-end"
           to="/articles"
