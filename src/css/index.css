@@ -1,5 +1,26 @@
 @tailwind preflight;
-
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  /* Undo some preflight styles to make blog posts look better */
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
 .arrow-anim {
   transition: transform 0.5s ease-in 0s, opacity 0.3s ease-in;
   opacity: 1;

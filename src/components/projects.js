@@ -10,7 +10,7 @@ const Projects = ({ projects }) => {
       className="container text-center my-20"
     >
       <h2 className="mb-8">Projects</h2>
-      <div className="flex flex-wrap justify-center sm:m-8 md:m-0">
+      <div className="flex flex-wrap justify-center sm:m-8 md:m-0 xs:px-4 sm:px-0">
         {projects.map(project => (
           <Project key={project.node.title} project={project.node} />
         ))}
@@ -22,7 +22,7 @@ const Projects = ({ projects }) => {
 const Project = ({ project }) => {
   return (
     <div
-      className="bg-white rounded-lg flex p-2 sm:p-4 shadow-lg m-4 md:max-w-xs"
+      className="bg-white rounded-lg flex p-2 sm:p-4 shadow-lg m-4 md:max-w-xs "
       key={project}
     >
       <div className="mx-auto flex flex-col justify-between text-left m-4 px-2 md:px-8">

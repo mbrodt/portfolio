@@ -13,12 +13,19 @@ const Articles = ({ data }) => {
   })
   return (
     <Layout>
-      <h1 className="text-2xl sm:text-3xl mb-8">Articles</h1>
-      <h3 className="mb-4">Blog posts</h3>
-      <PostList posts={blogPosts} />
-      <h3 className="mb-4">Work journals</h3>
-      <PostList posts={journalPosts} />
+      <h1 className="text-2xl sm:text-3xl mb-8 ml-4 lg:ml-0">Articles</h1>
+      <ArticleSection title="Blog Posts" posts={blogPosts} />
+      <ArticleSection title="Work Journals" posts={journalPosts} />
     </Layout>
+  )
+}
+
+const ArticleSection = ({ title, posts }) => {
+  return (
+    <div className="mb-8">
+      <h3 className="mb-4 ml-4 lg:ml-0">{title}</h3>
+      <PostList posts={posts} />
+    </div>
   )
 }
 
