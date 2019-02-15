@@ -4,7 +4,6 @@ import PostList from './post-list'
 import Arrow from './arrow'
 
 const Blog = ({ blogData }) => {
-  console.log('blogdata', blogData)
   const blogPosts = blogData.edges.filter(post => {
     return post.node.frontmatter.type === 'blog-post'
   })
