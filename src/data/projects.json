@@ -24,6 +24,14 @@
     "footerText": "Visit website"
   },
   {
+    "img": "confirmed.svg",
+    "title": "Reddit Browser",
+    "label": "Personal",
+    "description": "A webapp to browse subreddits that are interesting to the user by taking posts from a list of subreddits and sorting them by upvotes.",
+    "link": "https://reddit-browser.netlify.com/",
+    "footerText": "Visit website"
+  },
+  {
     "img": "search.svg",
     "title": "Youtube Downloader",
     "label": "Personal",
