@@ -18,7 +18,7 @@ const Blog = ({ blogData }) => {
           className="no-underline text-indigo hover:text-indigo-dark inline-flex items-end"
           to="/articles"
         >
-          Check out more of my writing <Arrow />
+          Check out more of my writing <Arrow direction="right" />
         </Link>
       </div>
     </section>

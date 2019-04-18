@@ -524,10 +524,16 @@ pre {
   opacity: 1;
 }
 
-a:hover .arrow-anim {
+a:hover .arrow-anim-right {
   opacity: 0;
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
+}
+
+a:hover .arrow-anim-left {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 
 .container {

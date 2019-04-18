@@ -41,7 +41,7 @@ const Project = ({ project }) => {
         >
           {' '}
           <p className="mb-0">{project.footerText}</p>
-          <Arrow />
+          <Arrow direction="right" />
         </a>
       </div>
     </div>
