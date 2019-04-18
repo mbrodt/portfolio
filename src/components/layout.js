@@ -13,7 +13,7 @@ class Layout extends React.Component {
   }
   render() {
     return (
-      <div className="bg-grey-lighter font-sans pb-10 sm:pb-20">
+      <div className="font-sans pb-10 sm:pb-20">
         <Helmet
           meta={[
             {
@@ -23,7 +23,7 @@ class Layout extends React.Component {
           ]}
           title="Mads Brodt"
         >
-          <body className="overflow-hidden" />
+          <body className="bg-grey-lighter min-h-screen overflow-hidden" />
           <html lang="en" />
         </Helmet>
         <Header />
