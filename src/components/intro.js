@@ -1,4 +1,5 @@
 import React from 'react'
+import PageHeading from './UI/PageHeading'
 
 const Intro = () => (
   <section
@@ -12,9 +13,11 @@ const Intro = () => (
         alt=""
       /> */}
     <div className="intro-text-container w-4/5">
-      <h1 className="mb-8 text-2xl sm:text-3xl">
-        Front-End <span className="text-indigo">Developer</span>
-      </h1>
+      <PageHeading>
+        {' '}
+        Front-End <span className="text-indigo-500">Developer</span>
+      </PageHeading>
+
       <p className="leading-normal mb-8 text-lg sm:text-xl">
         Hey! My name is Mads Brodt, and I’m a front-end developer living in
         Denmark. I design, create and support websites and applications for

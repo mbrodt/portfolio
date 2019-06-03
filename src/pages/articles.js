@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 import PostList from '../components/post-list'
+import PageHeading from '../components/UI/PageHeading'
 
 const Articles = ({ data }) => {
   const blogPosts = data.allMarkdownRemark.edges.filter(post => {
@@ -13,7 +14,7 @@ const Articles = ({ data }) => {
   })
   return (
     <Layout>
-      <h1 className="text-2xl sm:text-3xl mb-8 ml-4 lg:ml-0">Articles</h1>
+      <PageHeading className="ml-4 lg:ml-0">Articles</PageHeading>
       <ArticleSection title="Blog Posts" posts={blogPosts} />
       <ArticleSection title="Work Journals" posts={journalPosts} />
     </Layout>
@@ -23,7 +24,7 @@ const Articles = ({ data }) => {
 const ArticleSection = ({ title, posts }) => {
   return (
     <div className="mb-8">
-      <h3 className="mb-4 ml-4 lg:ml-0">{title}</h3>
+      <h3 className="mb-4 ml-4 lg:ml-0 font-semibold text-lg">{title}</h3>
       <PostList posts={posts} />
     </div>
   )

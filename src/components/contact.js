@@ -1,4 +1,5 @@
 import React from 'react'
+import SectionHeading from './UI/SectionHeading'
 
 const Contact = () => (
   <section id="contact" data-aos="fade-up" data-aos-delay="200">
@@ -11,22 +12,22 @@ const Contact = () => (
         data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <h2 className="mb-8">Get in touch</h2>
+        <SectionHeading>Get in touch</SectionHeading>
         <p className="mb-8">
           Freelance status:
-          <span className="bg-green-lighter text-green-darker font-bold rounded-full mx-2 py-2 px-4 text-sm">
+          <span className="bg-green-200 text-green-900 font-bold rounded-full mx-2 py-2 px-4 text-sm">
             Available
           </span>
         </p>
         <input
-          className="input-field border-b-2 border-indigo mb-2  h-12 px-4 bg-grey-lighter "
+          className="input-field border-b-2 border-indigo-500 mb-2  h-12 px-4 bg-gray-100 "
           type="text"
           id="name"
           name="name"
           placeholder="Name"
         />
         <input
-          className="input-field border-b-2 border-indigo mb-2  h-12 px-4 bg-grey-lighter"
+          className="input-field border-b-2 border-indigo-500 mb-2  h-12 px-4 bg-gray-100"
           type="email"
           id="email"
           name="email"
@@ -34,12 +35,12 @@ const Contact = () => (
         />
         <textarea
           rows="3"
-          className="input-field border-b-2 border-indigo mb-2  h-auto py-3 px-4 bg-grey-lighter"
+          className="input-field border-b-2 border-indigo-500 mb-2  h-auto py-3 px-4 bg-gray-100"
           id="message"
           name="message"
           placeholder="Message"
         />
-        <button className="bg-indigo w-2/5 text-md text-white rounded-lg p-2 sm:p-3  self-end hover:bg-indigo-dark">
+        <button className="bg-indigo-500 w-2/5 text-md text-white rounded-lg p-2  self-end hover:bg-indigo-700">
           Send message
         </button>
       </form>

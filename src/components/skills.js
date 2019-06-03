@@ -12,12 +12,13 @@ import CSSSkill from '../assets/css.svg'
 import Linux from '../assets/linux.svg'
 import Git from '../assets/git.svg'
 import Gatsby from '../assets/gatsby.png'
+import SectionHeading from './UI/SectionHeading'
 
 const Skills = () => {
   return (
     <section id="skills" data-aos="fade-right">
-      <h2 className="text-center mb-8">Skills</h2>
-      <div className="bg-indigo-darkest full-width py-10 sm:py-20 px-6 sm:px-10 flex justify-center flex-wrap ">
+      <SectionHeading>Skills</SectionHeading>
+      <div className="bg-indigo-1000 full-width py-10 sm:py-20 px-6 sm:px-10 flex justify-center flex-wrap ">
         <Skill skill={HTMLSkill} />
         <Skill skill={CSSSkill} />
         <Skill skill={JS} />

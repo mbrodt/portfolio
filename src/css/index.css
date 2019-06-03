@@ -1,4 +1,4 @@
-@tailwind preflight;
+@tailwind base;
 blockquote,
 dl,
 dd,
@@ -26,9 +26,13 @@ pre {
   opacity: 1;
 }
 
-a:hover .arrow-anim {
+a:hover .arrow-anim-right {
   opacity: 0;
   transform: translateX(50px);
+}
+a:hover .arrow-anim-left {
+  opacity: 0;
+  transform: translateX(-50px);
 }
 
 @tailwind components;

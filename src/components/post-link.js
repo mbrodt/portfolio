@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const PostLink = props => (
   <Link
     to={props.post.fields.slug}
-    className="flex items-center no-underline justify-between p-4 border-b-2 border-grey-light hover:bg-grey-light mx-4 lg:mx-0"
+    className="flex items-center no-underline justify-between p-4 border-b-2 border-gray-300 hover:bg-gray-300 mx-4 lg:mx-0"
   >
     <img
       src={require(`../assets/${props.post.frontmatter.icon}`)}
