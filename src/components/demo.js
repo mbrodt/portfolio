@@ -15,7 +15,7 @@ const Demo = ({ children }) => {
 const BackButton = () => {
   return (
     <Link
-      className="absolute pin-t pin-l bg-indigo p-12 rounded-br-full text-white no-underline "
+      className="absolute top-0 left-0 bg-indigo-500 p-12 rounded-br-full text-white no-underline "
       to={`/demos/`}
     >
       <div className="-ml-8 flex justify-center items-center ">

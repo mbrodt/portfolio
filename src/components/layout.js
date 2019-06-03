@@ -23,16 +23,12 @@ class Layout extends React.Component {
           ]}
           title="Mads Brodt"
         >
-          <body className="bg-grey-lighter min-h-screen overflow-hidden" />
+          <body className="bg-gray-100 min-h-screen overflow-hidden" />
           <html lang="en" />
         </Helmet>
         <Header />
-        <div className="text-grey-darkest pt-24 sm:pt-32">
-          <div
-            id="main-container"
-            className="container mx-auto hide"
-            // style={{ transition: 'all 0.7s ease' }}
-          >
+        <div className="text-gray-800 pt-24 sm:pt-32">
+          <div id="main-container" className="container mx-auto hide">
             {this.props.children}
           </div>
         </div>
@@ -46,45 +42,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-// const Layout = ({ children, data }) => (
-//   <div className="bg-grey-lighter font-sans pb-10 sm:pb-20">
-//     <Helmet
-//       meta={[
-//         {
-//           name: 'Mads Brodt Portfolio',
-//           content: 'A portfolio site for Mads Brodt',
-//         },
-//       ]}
-//       title="Mads Brodt"
-//     >
-//       <html lang="en" />
-//     </Helmet>
-//     <Header />
-//     <div className="text-grey-darkest">
-//       <div className="container mx-auto ">{children}</div>
-//     </div>
-//   </div>
-// )
-
-// Layout.propTypes = {
-//   children: PropTypes.array,
-// }
-
-// export default Layout
-
-// export const query = graphql`
-//   query ProjectsQuery {
-//     allProjectsJson {
-//       edges {
-//         node {
-//           img
-//           title
-//           description
-//           link
-//           footerText
-//         }
-//       }
-//     }
-//   }
-// `
