@@ -3,9 +3,6 @@
   "description": "Portfolio of Mads Brodt",
   "version": "1.0.0",
   "author": "Mads Brodt <madsbrodt3@gmail.com",
-  "engines": {
-    "yarn": "1.10.1"
-  },
   "dependencies": {
     "@svgr/cli": "^4.1.0",
     "aos": "^3.0.0-beta.6",
