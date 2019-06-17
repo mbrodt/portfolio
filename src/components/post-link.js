@@ -12,11 +12,11 @@ const PostLink = props => (
       className="w-8 mb-0 mr-4"
     />
 
-    <p className="leading-normal flex-1 font text-black text-md sm:text-lg mb-0 sm:mr-8">
+    <p className="leading-normal flex-1 font text-gray-900 text-md sm:text-lg mb-0 sm:mr-8">
       {props.post.frontmatter.title}
     </p>
 
-    <p className="hidden sm:block text-grey-darker mb-0">
+    <p className="hidden sm:block text-gray-600 mb-0">
       {props.post.frontmatter.date}
     </p>
   </Link>
