@@ -47,7 +47,7 @@
   "scripts": {
     "build:css": "postcss src/css/index.css -o src/css/generated.css",
     "watch:css": "postcss src/css/index.css -o src/css/generated.css -w",
-    "build": "npm run build:css && gatsby build",
+    "build": "yarn run build:css && gatsby build",
     "dev": "run-p watch:css gatsby",
     "gatsby": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
