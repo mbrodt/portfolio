@@ -7672,6 +7672,10 @@ a:hover .arrow-anim-left {
   transform: scale(1.5);
 }
 
+.link-hover-transition {
+  transition: background 0.2s;
+}
+
 @media (min-width: 640px) {
   .sm\:appearance-none {
     -webkit-appearance: none;

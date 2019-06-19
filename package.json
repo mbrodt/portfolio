@@ -5,6 +5,7 @@
   "author": "Mads Brodt <madsbrodt3@gmail.com",
   "dependencies": {
     "@svgr/cli": "^4.1.0",
+    "@tippy.js/react": "^2.2.2",
     "aos": "^3.0.0-beta.6",
     "autoprefixer": "^9.3.1",
     "cloudinary-react": "^1.0.6",

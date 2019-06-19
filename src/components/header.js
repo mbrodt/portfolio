@@ -17,7 +17,7 @@ const Header = () => (
       </a>
       <div className="flex items-center mr-4 lg:mr-0">
         <a
-          className="p-2 hover:bg-gray-300"
+          className="rounded p-2 hover:bg-gray-300 link-hover-transition"
           href="https://twitter.com/madsbrodt"
           target="_blank"
           rel="noopener noreferrer"
@@ -25,7 +25,7 @@ const Header = () => (
           <TwitterIcon className="w-5 sm:w-6 text-gray-500 fill-current" />
         </a>
         <a
-          className="p-2 hover:bg-gray-300"
+          className="rounded p-2 hover:bg-gray-300 link-hover-transition"
           href="https://github.com/mbrodt"
           target="_blank"
           rel="noopener noreferrer"
@@ -34,7 +34,7 @@ const Header = () => (
         </a>
         {/* For some reason the linkedin svg breaks if its a react component, so the fill is hardcoded into the svg */}
         <a
-          className="p-2 hover:bg-gray-300"
+          className="rounded p-2 hover:bg-gray-300 link-hover-transition"
           href="https://www.linkedin.com/in/mads-brodt-nielsen-a35874152/"
           target="_blank"
           rel="noopener noreferrer"

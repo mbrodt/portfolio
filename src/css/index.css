@@ -65,3 +65,7 @@ a:hover .arrow-anim-left {
 .skill-transition:hover {
   transform: scale(1.5);
 }
+
+.link-hover-transition {
+  transition: background 0.2s;
+}

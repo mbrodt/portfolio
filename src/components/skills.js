@@ -1,4 +1,5 @@
 import React from 'react'
+import Tippy from '@tippy.js/react'
 
 import Vue from '../assets/vue.svg'
 import GitHub from '../assets/github.svg'
@@ -15,33 +16,41 @@ import Gatsby from '../assets/gatsby.png'
 import SectionHeading from './UI/SectionHeading'
 
 const Skills = () => {
+  console.log('running tippy')
   return (
     <section id="skills" data-aos="fade-right">
       <SectionHeading>Skills</SectionHeading>
       <div className="bg-indigo-1000 full-width py-10 sm:py-20 px-6 sm:px-10 flex justify-center flex-wrap ">
-        <Skill skill={HTMLSkill} />
-        <Skill skill={CSSSkill} />
-        <Skill skill={JS} />
-        <Skill skill={Vue} />
-        <Skill skill={ReactSkill} />
-        <Skill skill={Gatsby} />
-        <Skill skill={Tailwind} />
-        <Skill skill={GitHub} />
-        <Skill skill={Git} />
-        <Skill skill={Terminal} />
-        <Skill skill={Linux} />
-        <Skill skill={Webpack} />
+        <Skill tooltip="HTML5" icon={HTMLSkill} />
+        <Skill tooltip="CSS3" icon={CSSSkill} />
+        <Skill tooltip="JavaScript" icon={JS} />
+        <Skill tooltip="Vue" icon={Vue} />
+        <Skill tooltip="React" icon={ReactSkill} />
+        <Skill tooltip="Gatsby" icon={Gatsby} />
+        <Skill tooltip="Tailwind" icon={Tailwind} />
+        <Skill tooltip="GitHub" icon={GitHub} />
+        <Skill tooltip="Git" icon={Git} />
+        <Skill tooltip="Terminal" icon={Terminal} />
+        <Skill tooltip="Linux" icon={Linux} />
+        <Skill tooltip="Webpack" icon={Webpack} />
       </div>
     </section>
   )
 }
 
-const Skill = ({ skill }) => (
-  <img
-    className="m-6 h-16 opacity-25 hover:opacity-100 skill-transition"
-    src={skill}
-    alt=""
-  />
+const Skill = ({ tooltip, icon }) => (
+  <Tippy
+    className="font-sans mb-4"
+    content={tooltip}
+    placement="top"
+    animation="shift-toward"
+  >
+    <img
+      className="m-6 h-16 opacity-25 hover:opacity-100 skill-transition"
+      src={icon}
+      alt=""
+    />
+  </Tippy>
 )
 
 export default Skills
