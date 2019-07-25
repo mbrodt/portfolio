@@ -17,7 +17,10 @@ export default ({ data }) => {
           <PageHeading>{post.frontmatter.title}</PageHeading>
           <p className="text-sm text-gray-600">{post.frontmatter.date}</p>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          className="markdown-article"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </div>
     </Layout>
   )

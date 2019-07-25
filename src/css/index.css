@@ -35,6 +35,28 @@ a:hover .arrow-anim-left {
   transform: translateX(-50px);
 }
 
+h2 {
+  @apply text-xl;
+}
+
+ol {
+  list-style-position: outside;
+  list-style-image: none;
+  list-style-type: decimal;
+}
+
+.markdown-article a {
+  @apply bg-indigo-200 px-1 py-1 text-indigo-800;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
 @tailwind components;
 
 .grid {
