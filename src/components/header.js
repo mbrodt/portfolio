@@ -1,11 +1,12 @@
 import React from 'react'
 import { TwitterIcon, GithubIcon, LinkedinIcon } from './svgIcons'
+import { Link } from 'gatsby'
 
 const Header = () => (
   <nav className="bg-gray-100 fixed top-0 left-0 shadow w-full py-4 z-10">
     <ul className="container mx-auto flex justify-between items-center mb-0">
-      <a
-        href="/"
+      <Link
+        to="/"
         className="ml-4 lg:ml-0  flex items-center no-underline font-bold"
       >
         <img
@@ -14,7 +15,7 @@ const Header = () => (
           alt=""
         />
         <span className="text-lg sm:text-xl">Mads Brodt</span>
-      </a>
+      </Link>
       <div className="flex items-center mr-4 lg:mr-0">
         <a
           className="rounded p-2 hover:bg-gray-300 link-hover-transition"
