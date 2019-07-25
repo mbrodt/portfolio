@@ -4,7 +4,7 @@
     "title": "Tandlægehuset Havdrup",
     "label": "Client",
     "description": "Custom made website for a dentist practice. Focus is on simple design, and allowing the business to edit information on the fly with a CMS. Built using Contentful and Gatsby.",
-    "link": "https://tandlaegehuset-havdrup.netlify.com/",
+    "link": "https://tandlaegehuset-havdrup.dk",
     "footerText": "Visit website"
   },
   {
@@ -29,22 +29,6 @@
     "label": "Personal",
     "description": "A webapp to browse subreddits that are interesting to the user by taking posts from a list of subreddits and sorting them by upvotes.",
     "link": "https://reddit-browser.netlify.com/",
-    "footerText": "Visit website"
-  },
-  {
-    "img": "search.svg",
-    "title": "Youtube Downloader",
-    "label": "Personal",
-    "description": "Search for Youtube videos and download them directly on to your machine. Uses a NodeJS server on the backend, with Vue and TailwindCSS on the frontend.",
-    "link": "https://ytdownload.netlify.com/",
-    "footerText": "Visit website"
-  },
-  {
-    "img": "movienight.svg",
-    "title": "Awesomovie",
-    "label": "Personal",
-    "description": "A movie browser with inbuilt watchlist functionality. Uses localstorage to store movies on a watchlist between browser sessions. Built with ReactJS.",
-    "link": "https://priceless-austin-5c9f85.netlify.com/",
     "footerText": "Visit website"
   }
 ]
