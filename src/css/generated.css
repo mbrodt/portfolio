@@ -647,6 +647,10 @@ ol {
   list-style-type: decimal;
 }
 
+ul {
+  list-style: disc;
+}
+
 .markdown-article a {
   background-color: #c3dafe;
   padding-left: 0.25rem;

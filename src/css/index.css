@@ -45,6 +45,10 @@ ol {
   list-style-type: decimal;
 }
 
+ul {
+  list-style: disc;
+}
+
 .markdown-article a {
   @apply bg-indigo-200 px-1 py-1 text-indigo-800;
 }
